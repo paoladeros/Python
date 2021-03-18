@@ -1,0 +1,6 @@
+A boolean value in Python generates two answers: True or False
+
+True corresponds to number 1
+False corresponds to number 0
+
+When you compare two values, the expression is evaluated and Python returns the Boolean answer
