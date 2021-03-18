@@ -1,0 +1,12 @@
+Variables are containers for storing data values
+
+
+Python has no command for declaring a variable.
+A variable is created the moment you first assign a value to it.
+
+my_variable = 1
+
+= is meant for assignment operator
+: is meant to denote the value of the variable
+
+If you change the value of a variable, the new value replace the old one.
