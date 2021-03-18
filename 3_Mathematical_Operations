@@ -1,0 +1,38 @@
+In Python, numbers are called operands. 
+Operators are addition, subtraction, multiplication, division, ...
+
+addition
+10+20+30
+
+60
+
+subtraction
+10-20
+
+-10
+
+multiplication
+
+5*5
+
+25
+
+division
+25/5
+
+5
+
+25/6
+
+4.166
+
+You can also get a int division, using double slash:
+
+25//6
+
+4
+
+Python follows mathematical conventions for operations (Python performs multiplication before addition)
+
+You can check all the operators here:
+https://www.tutorialspoint.com/python/python_basic_operators.htm
