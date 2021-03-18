@@ -8,8 +8,9 @@ They can contain different types of data (int, float, str) but the type of the v
 
 tuple = ('hello', 1, 2.5)
 
-You can access to an element by index
-Index can be positive or negative
+The address of each element within a list is called an index
+An index is used to access and refer to items within a list
+It can be positive or negative
 
 Positive index
 
