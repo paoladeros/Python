@@ -24,3 +24,9 @@ string index out of range
 len(my_variable)    
 
 13
+
+
+Strings are immutable. You can't change them, but you can simply create a new one
+
+METHODS TO STRINGS
+
