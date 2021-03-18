@@ -1,4 +1,4 @@
-List and Tuples are compound data types
+Lists and Tuples are compound data types
 They are data structure in Python
 
 Tuples 
@@ -80,3 +80,57 @@ in which
 ["banana", 10] represent L[3]
 
 One key difference is they are mutable
+
+A = ["apple", 10.1, 2021]
+A [0] = "mango"
+A = ["mango", 10.1, 2021]
+
+
+del
+
+removes an argument from the list
+
+A = ["apple", 10.1, 2021]
+del (A [0])
+
+A  : 10.1, 2021]
+
+
+split
+
+converts a string 
+split converts every group of characters separated by a space into an element of a list
+
+"banana milkshake".split ( )
+
+["banana", "milkshake"]
+
+We can use the split function to separate strings on a specific character known, as a delimiter
+
+"A, B, C, D".split (",")
+
+["A", "B", "C", "D"]
+
+
+Multiple names referring to the same object is known as aliasing
+Aliasing produces a side effect because When we set one variable B equal to A, both A and B are referencing the same list
+
+B [0] = "hard rock"
+A [0] = "banana"
+
+A = B
+
+--> B [0] = "banana"
+
+You can clone list A, using
+
+B = A  [:]
+
+A = ["hard rock", 10, 1.2]
+B = ["hard rock", 10, 1.2]
+
+B refers to a new copy or clone
+Now, if you change A, B will not change
+
+A [0] = "banana"
+B [0] = "hard rock"
