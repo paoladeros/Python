@@ -13,4 +13,4 @@ INDEX
 
 5 Strings
 
-6 List and Tuples
+6 Lists and Tuples
