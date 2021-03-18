@@ -1,0 +1,82 @@
+List and Tuples are compound data types
+They are data structure in Python
+
+Tuples 
+
+Tuples are ordered sequence written as comma-separated elements within paranthesis
+They can contain different types of data (int, float, str) but the type of the variable is tuple
+
+tuple = ('hello', 1, 2.5)
+
+You can access to an element by index
+Index can be positive or negative
+
+Positive index
+
+tuple [0] = 'hello'
+tuple [1] = 1
+tuple [2] = 2.5
+
+Negative index
+
+tuple [-1] = 2.5
+tuple [-2] = 1
+tuple [-3] = 'hello'
+
+Tuples can be concatenated by adding them
+
+tuple2 = tuple + ('world', 4.5)
+tuple2 = ('hello', 1, 2.5, 'world', 4.5)
+
+
+len 
+command to obtain the length of a tuple
+
+
+Tuples are immutable, we can't change them
+If we would like to manipulate a tuple we must create a new tuple instead
+
+
+sorted 
+function to sort tuples
+
+The input is the original tuple, the output is a new sorted list
+
+Rating (10, 9, 5, 2, 6, 8, 5
+RatingSorted = sorted (Rating)
+RatingSorted = (2, 5, 5, 6, 8, 9, 10)
+
+
+A tuple can contain other tuples. It is called nesting.
+
+
+Lists
+
+Lists are data structure in Python
+Lists are an ordered sequence represented with square brackets
+They can contain strings, floats, integers. We can nest other lists. We also nest tuples and other data structures. 
+The same indexing conventions apply for nesting Like tuples, each element of a list can be accessed via an index
+We can concatenate or combine lists by adding them
+
+
+extend
+
+L = ["apple", 10.1, 2021]
+L.extend (["banana", 10])
+L = ["apple", 10.1, 2021, "banana", 10]
+
+
+append
+
+L = ["apple", 10.1, 2021]
+L.append (["banana", 10])
+L = ["apple", 10.1, 2021, ["banana", 10]]
+
+
+in which
+"apple" represents L[0]
+10.1 represents L[1]
+2021 represents L[2]
+["banana", 10] represent L[3]
+
+One key difference is they are mutable
