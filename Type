@@ -8,3 +8,14 @@ declaration: type(11.123)
 
 str stays for string
 declaration: "Hello, world"
+
+You can change the type of the expression. This is called 'typecasting'
+
+int --> float
+float (2): 2.0
+
+int (1.1):1 (in this case, you are losing some information about the data)
+
+str(1): "1"
+str(1.5): "1.5"
+
