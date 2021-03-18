@@ -5,5 +5,3 @@ INDEX
 
 1 Type
 2 Boolean
-3 Mathematical Operations
-4 Variables
