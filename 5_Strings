@@ -1,0 +1,26 @@
+A string is a sequence of characters contained within two quotes
+
+my_variable: "Hello, world!"
+
+Characters are positional, and are calculated in a vector starting from 0
+
+my_variable[0]    
+
+'H'
+
+
+my_variable[12]
+
+'!'
+
+my_variable[14]  
+Warning: it's out of line!
+
+It will produce a log error:
+string index out of range
+
+'len' is the command to know the exact number of characters that make up the string
+
+len(my_variable)    
+
+13
