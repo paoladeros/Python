@@ -12,3 +12,5 @@ INDEX
 4 Variables
 
 5 Strings
+
+6 List and Tuples
