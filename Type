@@ -1,0 +1,10 @@
+'type' is how Python represents different types of data
+
+int stays for integers
+declaration: type(11)
+
+float stays for real numbers with decimal places
+declaration: type(11.123)
+
+str stays for string
+declaration: "Hello, world"
