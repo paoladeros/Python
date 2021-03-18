@@ -30,3 +30,64 @@ Strings are immutable. You can't change them, but you can simply create a new on
 
 METHODS TO STRINGS
 
+\n
+
+It generates a new line
+
+"Hello, world!\nThis is my first code"
+
+Hello, world!
+This is my first code
+
+
+\t
+
+It represents a tab
+
+"Hello, world!\tThis is my first code"
+
+Hello, world!  This is my first code
+
+
+
+\\ 
+
+It places a backslash
+
+"Hello, world! \\ This is my first code"
+
+Hello, world! \ This is my first code
+
+Alternatevely, you can put a 'r' before the string:
+
+print(r "Hello, world! \ This is my first code")
+
+Hello, world! \ This is my first code
+
+
+upper
+
+a = Hello, world!
+a.upper ( )
+HELLO, WORLD!
+
+
+replace
+
+a = "Hello, world!"
+a.replace ("world", "readers")
+Hello, readers!
+
+
+find
+
+a = "Hello, world!"
+a.find ('e')
+1
+
+If the output is not in the string, the value of 'find' will be negative
+
+a = "Hello, world!"
+a.find ('9')
+-1
+
