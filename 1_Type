@@ -27,3 +27,5 @@ declaration: L = ["ratings", 2021, 9.5]
 
 dictionary
 declaration: Dict = {"key1": 1, "key2": "2", "key3": [3, 3, 3], "key4": (4, 4, 4), ('key5'): 5, (0, 1): 6}
+
+set
