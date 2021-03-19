@@ -1,0 +1,28 @@
+Conditions in Python
+
+Comparison Operators
+Comparison operations compare some value or operand and, based on a condition, they produce a Boolean.
+When comparing two values you can use these operators:
+
+equal: ==
+not equal: !=
+greater than: >
+less than: <
+greater than or equal to: >=
+less than or equal to: <=
+
+a = 5
+a == 6
+
+It will procuce a False answer
+
+We can apply the same methods on strings.
+
+"apple" == "banana"
+
+False
+
+
+"apple" != "banana"
+
+True
