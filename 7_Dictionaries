@@ -1,0 +1,47 @@
+Dictionaries
+
+Dictionaries are a type of collection in Python denoted with curly brackets
+They are used to store data values in key: value pairs.
+Key represents the index: it is the first element, it is immutable and unique
+The value instead is immutable, mutable, and duplicates
+Each key and value pair is separated by a comma
+
+{"Thriller" : 1992, "Back in black" : 1980, "The Dark Side of the Moon" : 1973, "The Bodyguard" : 1992}
+
+
+"Thriller"                                "1982"
+"Back in black"                           "1980"
+"The Dark Side of the Moon"               "1973"
+"The Bodyguard"                           "1992"
+
+DIC["Thriller"]: "1973"
+
+
+Add a new key and value to the dictionary:
+
+DIC["Graduation"]: "2007"
+
+
+Delete a ky and value from the dictionary:
+
+del (DICT ["Thriller"])
+
+
+Is it in the dictionary?
+We can verify if an element is in the dictionary using the "in" command
+
+"The Bodyguard" in DICT
+
+The command checks the keys
+If they are in the dictionary, they return a True.
+If we try the same command with a key that is not in the dictionary, we get a False
+
+
+See all the keys in the dictionary:
+
+DICT.keys ()
+
+
+See all the values in the dictionary:
+
+DICT.values ()
