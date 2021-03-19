@@ -19,3 +19,11 @@ int (1.1):1 (in this case, you are losing some information about the data)
 str(1): "1"
 str(1.5): "1.5"
 
+tuple
+declaration: tuple = (9, 8.5, "ratings", 6)
+
+list
+declaration: L = ["ratings", 2021, 9.5]
+
+dictionary
+declaration: Dict = {"key1": 1, "key2": "2", "key3": [3, 3, 3], "key4": (4, 4, 4), ('key5'): 5, (0, 1): 6}
