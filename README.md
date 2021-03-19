@@ -14,3 +14,5 @@ INDEX
 5 Strings
 
 6 Lists and Tuples
+
+7 Dictionaries
