@@ -1,0 +1,16 @@
+Branching
+Branching allows us to run different statements for different inputs. 
+If the statement is True, the program will run some predefined tasks, if the statement is False the program will ignore the task
+
+That condition is expressed by 'if' function
+
+age = 22
+if age > 21
+
+print ("You can vote")
+
+The program will run this code because the condition is True.
+
+If the condition is False, the program can run a 'else' function.
+
+
