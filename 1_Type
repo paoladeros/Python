@@ -29,3 +29,4 @@ dictionary
 declaration: Dict = {"key1": 1, "key2": "2", "key3": [3, 3, 3], "key4": (4, 4, 4), ('key5'): 5, (0, 1): 6}
 
 set
+Set1 = {"pop", "rock", "soul", "hard rock", "R&B", "rock", "disco"}
