@@ -45,3 +45,18 @@ DICT.keys ()
 See all the values in the dictionary:
 
 DICT.values ()
+
+
+Access to the value by the key:
+
+DICT ["key1"]
+
+Keys can also be any immutable object such as a tuple
+
+DICT [(0, 1)]
+
+
+Get value by keys:
+
+DICT ['Thriller'] 
+
