@@ -1,0 +1,84 @@
+Sets
+
+Sets are a type of collection, defined by curly brackets
+
+They are unordered. This means sets do not record element position
+Sets only have unique elements. This means there is only one of a particular element in a set
+
+Set1 = {"pop", "rock", "soul", "hard rock", "R&B", "rock", "disco"}
+
+"rock" is present three times in the set
+When the actual set is created, duplicate items will not be present
+
+
+You can convert a list to a set by using the function 'set', this is called type casting
+
+list ---> set () ---> set 
+In the new set created there will not be duplicates values
+
+
+SETS OPERATIONS
+
+Addition
+
+A = { "Thriller", "Back to Black", "AC/DC" }
+A.add ("NSYNC")
+
+A = { "AC/DC", "Back to Black", "NSYNC", "Thriller"}
+
+If we add the same item twice, nothing will happen as there can be no duplicates in a set. 
+
+
+Delete an item
+
+A = { "AC/DC", "Back to Black", "NSYNC", "Thriller"}
+A.remove ("NSYNC")
+
+A = { "AC/DC", "Back to Black", "Thriller"}
+
+
+Is in the set? 
+
+We can verify if an element is in the set using the 'in' command
+The command checks that the item, if the item is in the set, it returns True. 
+If we look for an item that is not in the set, we will get a False.
+
+A = { "AC/DC", "Back to Black", "Thriller"}
+"Who" in A
+
+False
+
+
+Intersection between sets
+
+album_set_1 = {"AC/DC", "Back in Black", "Thriller"}
+album_set_2 = {"AC/DC", "Back in Black", "The Dark Side of the Moon"}
+album_set_3 = album_set_1 & album_set_2
+
+The intersection command is '&'
+
+album_set_3 : {"AC/DC", "Back in Black"}
+
+
+Union between sets
+
+The union command is '.union ()'
+
+album_set_1.union(album_set_2)
+
+{"AC/DC", "Back in Black", "Thriller", "The Dark Side of the Moon"}
+
+
+Subset
+
+The subset command is '.issubset ()'
+
+album_set_1 = {"AC/DC", "Back in Black", "Thriller"}
+album_set_3 = {"AC/DC", "Back in Black"}
+album_set_3.issubset (album_set_1)
+
+True
+
+If it is a subset, the output will return True, 
+If it is not a subset, the output will return False 
+
