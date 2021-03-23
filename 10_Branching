@@ -13,4 +13,7 @@ The program will run this code because the condition is True.
 
 If the condition is False, the program can run a 'else' function.
 
+The 'elif' statement, short for else if, allows us to check additional conditions if the condition statements before it are False.
+If the condition for the elif statement is True, the alternate expressions will be run
+
 
