@@ -22,3 +22,5 @@ INDEX
 9 Conditions
 
 10 Branching
+
+11 Loops
