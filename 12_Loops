@@ -1,0 +1,25 @@
+Loops
+
+In Python, repeated executions are performed by loops
+To better understand loops, we start with the definiion of 'range'.
+
+Range
+
+It is helpful to think of the range object as an ordered list
+
+range(3)
+
+It corresponds to a list of range(0, 3) which contains the elements: [0, 1, 2]
+
+
+'For' and 'While' loops
+
+'for' and 'while' are two commands in Python to perform loops.
+for executes a statement a set number of time, 
+while only runs if a condition is met. The code block will keep being executed until the given logical condition returns a False boolean value.
+
+
+
+
+
+
