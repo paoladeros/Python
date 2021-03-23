@@ -24,3 +24,5 @@ INDEX
 10 Branching
 
 11 Loops
+
+12 Functions
