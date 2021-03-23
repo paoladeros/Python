@@ -1,0 +1,108 @@
+Functions
+
+A function is a reusable block of code which performs operations specified in the function.
+Once a function is defined, it can be used repeatedly. You can invoke the same function many times in your program. 
+You can save your function and use it in another program or use someone else’s function
+
+There are two types of functions:
+
+Pre-defined functions
+User defined functions
+
+How to define a function in Python:
+
+Functions blocks begin def followed by the function name and parentheses ().
+There are input parameters or arguments that should be placed within these parentheses.
+You can also define parameters inside these parentheses.
+There is a body within every function that starts with a colon (:) and is indented.
+You can also place documentation before the body.
+The statement return exits a function, optionally passing back a value.
+
+def add(a):
+    b = a + 1
+    print(a, "if you add one", b)
+    return(b)
+    
+ 
+ We call the function by the name with which we defined it
+ 
+ add(1)
+ 
+If we call the function with a new input we get a new result:
+
+ add(2) 
+ 
+ 
+Variables
+
+The input to a function is called a formal parameter.
+A variable that is declared inside a function is called a local variable.
+The parameter only exists within the function (i.e. the point where the function starts and stops).
+
+A variable that is declared outside a function definition is a global variable, and its value is accessible and modifiable throughout the program
+
+
+Pre-defined functions
+
+There are many pre-defined functions in Python:
+
+print ( )
+
+album_ratings = [10.0, 8.5, 9.5, 7.0, 7.0, 9.5, 9.0, 9.5] 
+print(album_ratings)
+
+
+sum ( )
+This function adds all the elements in a list or tuple
+
+sum(album_ratings)
+
+
+len ( )
+This function returns the length of a list or tuple
+
+len(album_ratings)
+
+
+return ( )
+Thsi function ends function execution and specifies a value to be returned to the function caller
+
+It is particularly useful if you have any IF statements in the function, when you want your output to be dependent on some condition:
+
+def type_of_album(artist, album, year_released):
+    
+    print(artist, album, year_released)
+    if year_released > 1980:
+        return "Modern"
+    else:
+        return "Oldie"
+    
+x = type_of_album("Michael Jackson", "Thriller", 1980)
+print(x)
+
+
+Global Variables
+In Python, a variable declared outside of the function or in global scope is known as a global variable. 
+This means that a global variable can be accessed inside or outside of the function.
+
+x = "global"
+
+def demo():
+    print("x inside:", x)
+
+
+demo()
+print("x outside:", x)
+
+Output:
+
+x inside: global
+x outside: global
+
+Wwe created x as a global variable and defined a demo() to print the global variable x. Finally, we call the demo() which will print the value of x.
+
+
+Scope of a variable
+The scope of a variable is the part of that program where that variable is accessible.
+Variables that are declared outside of all function definitions are accessible from anywhere within the program.
+As a result, such variables are said to have global scope, and are known as global variables.
