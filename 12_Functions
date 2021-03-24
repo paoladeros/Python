@@ -43,7 +43,6 @@ def sum (a, b):
     
 This function sum parameter 'a' with parameter 'b' and returns the result
 
-Parameters or Arguments?
 
 The terms parameter and argument can be used for the same thing: information that are passed into a function.
 
@@ -103,23 +102,6 @@ len ( )
 This function returns the length of a list or tuple
 
 len(album_ratings)
-
-
-return ( )
-Thsi function ends function execution and specifies a value to be returned to the function caller
-
-It is particularly useful if you have any IF statements in the function, when you want your output to be dependent on some condition:
-
-def type_of_album(artist, album, year_released):
-    
-    print(artist, album, year_released)
-    if year_released > 1980:
-        return "Modern"
-    else:
-        return "Oldie"
-    
-x = type_of_album("Michael Jackson", "Thriller", 1980)
-print(x)
 
 
 Global Variables
