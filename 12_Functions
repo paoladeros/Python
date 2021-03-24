@@ -18,13 +18,54 @@ There is a body within every function that starts with a colon (:) and is indent
 You can also place documentation before the body.
 The statement return exits a function, optionally passing back a value.
 
+Example:
+
+def function_name (parameters):
+    function execution
+    return parameters
+    
+
 def add(a):
     b = a + 1
     print(a, "if you add one", b)
     return(b)
+
+
+Arguments / Parameters
+
+Information can be passed into functions as arguments.
+Arguments are specified after the function name, inside the parentheses.
+You can add as many arguments as you want, separated by a comma.
+Parameters in the funcion can be single or multiple, like this:
+
+def sum (a, b):
+    return a + b
+    
+This function sum parameter 'a' with parameter 'b' and returns the result
+
+Parameters or Arguments?
+
+The terms parameter and argument can be used for the same thing: information that are passed into a function.
+
+From a function's perspective:
+A parameter is the variable listed inside the parentheses in the function definition.
+An argument is the value that is sent to the function when it is called.
+
+By default, a function must be called with the correct number of arguments.
+Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments.
+If you try to call the function with 1 or 3 arguments, you will get an error.
+
+If you do not know how many arguments that will be passed into your function, add a '*' before the parameter name in the function definition.
+This way the function will receive a tuple of arguments, and can access the items accordingly.
+If you do not know how many keyword arguments that will be passed into your function, add two asterisk: '**' before the parameter name in the function definition.
+This way the function will receive a dictionary of arguments, and can access the items accordingly
+
+
+
+Calling a function
     
  
- We call the function by the name with which we defined it
+ We can call the function by the name with which we defined it
  
  add(1)
  
@@ -32,7 +73,7 @@ If we call the function with a new input we get a new result:
 
  add(2) 
  
- 
+
 Variables
 
 The input to a function is called a formal parameter.
@@ -106,3 +147,13 @@ Scope of a variable
 The scope of a variable is the part of that program where that variable is accessible.
 Variables that are declared outside of all function definitions are accessible from anywhere within the program.
 As a result, such variables are said to have global scope, and are known as global variables.
+
+
+Recursion
+
+Python accepts function recursion, which means a defined function can call itself.
+This has the benefit of meaning that you can loop through data to reach a result.
+
+The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates,
+or one that uses excess amounts of memory or processor power.
+However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.
