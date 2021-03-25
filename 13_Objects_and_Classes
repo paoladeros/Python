@@ -1,0 +1,127 @@
+Objects and Classes
+
+Python is an object oriented programming language, which means that it relies on the concept of classes and objects.
+
+
+Classes
+
+A class is an abstract blueprint used to create more specific, concrete objects.
+Classes often represent broad categories, like 'circle' or 'cat' that share attributes. Attributes are variables.
+These classes define what attributes an instance of this type will have, like color, but not the value of those attributes for a specific object.
+
+Class Circle
+Attributes: radius, color 
+
+
+Methods
+
+Classes can also contain functions, called 'methods' available only to objects of that type.
+These functions are defined within the class and perform some action that interact with or modify the object
+
+.add_radius(2)
+
+can be a method for increase the circle radius by r
+
+
+Creating a Class
+
+The first step in creating your own class is to use the 'class' keyword, then the name of the class. In this case, 'Circle'.
+
+class Circle (object):
+
+The next step is a special method called a constructor 'init', which is used to initialize the object.
+The input are data attributes. The term 'self' contains all the attributes in the set.
+For example, the 'self.color' gives the value of the attribute color and 'self.radius' will give you the radius of the object.
+We also have the method 'add_radius()' with the parameter r, the method adds the value of r to the attribute radius.
+To access the radius we use the syntax self.radius
+
+class Circle(object):
+    
+    # Define your class
+    def __init__(self, radius=3, color='blue'):
+        self.radius = radius
+        self.color = color 
+    
+    # Data attributes to initialize object
+    def add_radius(self, r):
+        self.radius = self.radius + r
+        return(self.radius)
+    
+    # Method
+    def drawCircle(self):
+        plt.gca().add_patch(plt.Circle((0, 0), radius=self.radius, fc=self.color))
+        plt.axis('scaled')
+        plt.show()  
+
+
+If you want to try this code on Python, which allows you to draw the circle shape, be sure to import the following library:
+
+import matplotlib.pyplot as plt
+%matplotlib inline  
+
+
+Creating an instance of a class Circle
+
+Let’s create the object 'RedCircle' of type Circle to do the following:
+
+RedCircle = Circle(10, 'red')
+
+We can use the 'dir' command to get a list of the object's methods. Many of them are default Python methods.
+
+# Find out the methods can be used on the object RedCircle
+
+dir(RedCircle)
+
+We can look at the data attributes of the object:
+
+# Print the object attribute radius
+
+RedCircle.radius
+
+# Print the object attribute color
+
+RedCircle.color
+
+We can change the object's data attributes:
+
+# Set the object attribute radius
+
+RedCircle.radius = 1
+RedCircle.radius
+We can draw the object by using the method drawCircle():
+
+# Call the method drawCircle
+
+RedCircle.drawCircle()
+We can increase the radius of the circle by applying the method add_radius(). Let increases the radius by 2 and then by 5:
+
+# Use method to change the object attribute radius
+
+print('Radius of object:',RedCircle.radius)
+RedCircle.add_radius(2)
+print('Radius of object of after applying the method add_radius(2):',RedCircle.radius)
+RedCircle.add_radius(5)
+print('Radius of object of after applying the method add_radius(5):',RedCircle.radius)
+Let’s create a blue circle. As the default colour is blue, all we have to do is specify what the radius is:
+
+# Create a blue circle with a given radius
+
+BlueCircle = Circle(radius=100)
+
+As before we can access the attributes of the instance of the class by using the dot notation:
+
+# Print the object attribute radius
+
+BlueCircle.radius
+
+# Print the object attribute color
+
+BlueCircle.color
+
+We can draw the object by using the method drawCircle():
+
+# Call the method drawCircle
+
+BlueCircle.drawCircle()
+
+Compare the x and y axis of the figure to the figure for RedCircle; they are different.
