@@ -1,0 +1,163 @@
+
+
+Reading Text Files
+
+One way to read or write a file in Python is to use the built-in 'open' function.
+The 'open' function provides a File object that contains the methods and attributes you need in order to read, save, and manipulate the file
+
+file = open (" resources / data / Example.txt", "r")
+
+file represents file object
+" resources / data /" is the file path
+Example.txt" is the file name
+"r" represent the mode
+
+The mode  is the method by which to open the file.
+The mode argument is optional and the default value is "r"
+There are 3 modes to open a file:
+
+"r" stands for "read" mode
+"w" stands for "writw" mode
+"a" stands for "append" mode
+
+
+Reading a File
+
+# Read the Example.txt
+
+example = "Example.txt"
+file1 = open(example, "r")
+
+We can view the attributes of the file.
+
+The name of the file:
+
+# Print the path of file
+
+file1.name
+'Example.txt'
+
+The mode the file object is in:
+
+# Print the mode of file, either 'r' or 'w'
+
+file1.mode
+We can read the file and assign it to a variable :
+
+# Read the file
+
+FileContent = file1.read()
+FileContent
+
+The /n means that there is a new line.
+
+We can print the file:
+
+# Print the file with '\n' as a new line
+
+print(FileContent)
+
+The file is of type string:
+
+# Type of file content
+
+type(FileContent)
+It is very important that the file is closed in the end. This frees up resources and ensures consistency across different python versions.
+
+# Close file after finish
+
+file1.close()
+
+
+A Better Way to Open a File
+
+Using the 'with' statement is better practice, it automatically closes the file even if the code encounters an exception.
+The code will run everything in the indent block, then close the file object.
+
+# Open file using 'with'
+
+with open(example, "r") as file1:
+    FileContent = file1.read()
+    print(FileContent)
+    
+The file object is closed, you can verify it by running:
+
+# Verify if the file is closed
+
+file1.closed
+
+We can see the info in the file:
+
+# See the content of file
+
+print(FileContent)
+
+Let's see the full sintax:
+
+with open ("Example.txt", "r") as file1:
+FileContent = file1.read()
+
+print(FileContent)
+
+We don’t have to read the entire file.
+For example, we can read the first 4 characters by entering three as a parameter to the method .read():
+
+# Read first four characters
+
+with open(example, "r") as file1:
+    print(file1.read(4))
+    
+Once the method .read(4) is called the first 4 characters are called
+If we call the method again, the next 4 characters are called
+The output for the following cell will demonstrate the process for different inputs to the method read():
+
+# Read certain amount of characters
+
+with open(example, "r") as file1:
+    print(file1.read(4))
+    print(file1.read(4))
+    print(file1.read(7))
+    print(file1.read(15))
+    
+ We can also read one line of the file at a time using the method 'readline():'
+
+# Read one line
+
+with open(example, "r") as file1:
+    print("first line: " + file1.readline())
+    
+We can also pass an argument to  readline()  to specify the number of charecters we want to read. However, unlike  read(),  readline() can only read one line at most.
+
+with open(example, "r") as file1:
+    print(file1.readline(20)) # does not read past the end of line
+    print(file1.read(20)) # Returns the next 20 chars
+
+We can use a loop to iterate through each line:
+
+# Iterate through the lines
+
+with open(example,"r") as file1:
+        i = 0;
+        for line in file1:
+            print("Iteration", str(i), ": ", line)
+            i = i + 1
+            
+We can use the method readlines() to save the text file to a list:
+
+# Read all lines and save as a list
+
+with open(example, "r") as file1:
+    FileasList = file1.readlines()
+Each element of the list corresponds to a line of text:
+
+# Print the first line
+
+FileasList[0]
+
+Print the second line
+
+FileasList[1]
+
+Print the third line
+
+FileasList[2]
